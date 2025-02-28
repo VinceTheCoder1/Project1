@@ -30,3 +30,9 @@
   <script src="scripts.js"></script>
 </body>
 </html>
+
+<form action="/submit" method="POST">
+    <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+    <!-- Other form fields -->
+    <button type="submit">Submit</button>
+</form>
